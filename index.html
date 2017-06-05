@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>一柜通个性化首页</title>
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/zTreeStyle/zTreeStyle.css" rel="stylesheet">
+</head>
+
+<body>
+	 <script src="js/framework/jquery-1.10.0.min.js"></script>
+	<script src="js/framework/jquery-ui.js"></script>
+	<script src="js/framework/bootstrap.js"></script>
+	<script src="js/framework/bootstrap-dynamic-tabs.js"></script>
+	<script>
+		//自适应内容最小高度
+		$(document).ready(function(){
+			var height=$(window).height()-42;
+			var width=$(window).width();
+			$(".hmain_control").css({"min-height":height});
+		})
+	</script>
+<div class="htop">
+	<ul>
+    	<li class="htop_bg"><img src="images/img_tx.png" /><span>这个是用户名</span><a href="#"><img src="images/icon_esc.png" /></a></li>
+    	<li>超级管理员</li>
+    	<li class="htop_sz htop_bg"><a href="#"></a></li>
+    	<li class="htop_no"><input name="" type="text" class="htop_search"/></li>
+    </ul>
+</div>
+<div class="layout" >
+
+	<div id="mainMenu">
+		<main-menu :menus="pmenus" :addflag="classflag"></main-menu>
+	</div>
+	<div class="hmain_control">
+		<div class="hmain_box">
+			<div class="hmain_top" >
+				<div class="hmain_common" id="favourMenu">
+					<favour-menu :favourlist="pfavourlist"></favour-menu>
+				</div>
+				
+
+				<div id="commonTab"></div>
+				
+				
+			</div>
+
+                <div class="hextra">
+                    <a href="#" class="hextra_zd"></a>
+                </div>
+				<div class="hbottom"><p>Copyright © 1998-2016 深圳市金证科技股份有限公司版权所有</p></div>
+		</div>
+		<div id="modalBox">
+		    <modal-dialog :menu-tree="modals" :modalstitle="pmodalstitle"></modal-dialog>
+		</div>
+	</div>
+</div>
+
+  <!-- app -->
+  <script src="build/dashboard.js"></script>
+</body>
+</html>

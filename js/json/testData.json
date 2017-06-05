@@ -1,0 +1,16 @@
+{
+	"linkTree" : [
+		{"MENU_ID":"1", "PAR_MENU":"-1", "MENU_NAME":"总部", "MENU_LINK": "http://www.baidu.com" },
+		{"MENU_ID":"2", "PAR_MENU":"1", "MENU_NAME":"区域一", "MENU_LINK": "http://www.baidu.com" },
+		{"MENU_ID":"3", "PAR_MENU":"1", "MENU_NAME":"区域二", "MENU_LINK": "http://www.baidu.com" },
+		{"MENU_ID":"4", "PAR_MENU":"-1", "MENU_NAME":"区域三", "MENU_LINK": "http://www.baidu.com" },
+		{"MENU_ID":"5", "PAR_MENU":"4", "MENU_NAME":"区域四", "MENU_LINK": "http://www.baidu.com" },
+		{"MENU_ID":"6", "PAR_MENU":"4", "MENU_NAME":"区域五", "MENU_LINK": "http://www.baidu.com" }
+	],
+	"leftMenu" : [
+		{"GROUP_ID":1,"GROUP_NAME":"标签页一","ICON_CLS":"icon_01"},
+		{"GROUP_ID":2,"GROUP_NAME":"标签页二","ICON_CLS":"icon_02"},
+		{"GROUP_ID":3,"GROUP_NAME":"标签页三","ICON_CLS":"icon_01"},
+		{"GROUP_ID":4,"GROUP_NAME":"标签页四","ICON_CLS":"icon_02"}
+	]
+}
