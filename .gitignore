@@ -45,3 +45,25 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.iml
+.idea/
+.ipr
+.iws
+*~
+~*
+*.diff
+*.patch
+*.bak
+.DS_Store
+Thumbs.db
+.svn/
+*.swp
+.nojekyll
+.project
+.settings/
+node_modules/
+_site/
+back/
+Uploads/
+build/
+*.log
